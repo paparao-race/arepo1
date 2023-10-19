@@ -1,0 +1,14 @@
+---
+- name: Play1
+  hosts: nodegrp
+  become: true
+  tasks:
+  - name: task1
+    debug:
+      msg: " Hello task1 executed!!!"
+  - name: task2
+    debug:
+      msg: " Hello task2 executed!!!"
+  - name: task3
+    debug:
+      msg: " Hello task3 executed!!!"
